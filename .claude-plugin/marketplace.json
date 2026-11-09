@@ -1,0 +1,36 @@
+{
+  "name": "yitz-skills",
+  "owner": { "name": "Yitz" },
+  "metadata": {
+    "description": "Personal marketplace that pulls selected skills from upstream repos"
+  },
+  "plugins": [
+    {
+      "name": "website-copy",
+      "description": "Website copy from Corey Haines' marketingskills: copywriting for new pages (homepage, landing, pricing, feature, about) and copy-editing for improving existing copy.",
+      "author": { "name": "Corey Haines" },
+      "homepage": "https://github.com/coreyhaines31/marketingskills",
+      "license": "MIT",
+      "category": "marketing",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/coreyhaines31/marketingskills.git",
+        "path": "skills",
+        "ref": "main"
+      },
+      "strict": false,
+      "skills": ["./copywriting", "./copy-editing"]
+    },
+    {
+      "name": "stop-slop",
+      "description": "Hardik Pandya's stop-slop: removes AI writing tells from prose. Use as the final pass on drafts.",
+      "author": { "name": "Hardik Pandya" },
+      "homepage": "https://github.com/hardikpandya/stop-slop",
+      "license": "MIT",
+      "category": "writing",
+      "source": { "source": "github", "repo": "hardikpandya/stop-slop" },
+      "strict": false,
+      "skills": ["./"]
+    }
+  ]
+}
